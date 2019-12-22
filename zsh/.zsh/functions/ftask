@@ -1,0 +1,5 @@
+function ftask () {
+    /Users/andreas/bin/taskfzf
+}
+zle -N ftask
+bindkey '^T' ftask
