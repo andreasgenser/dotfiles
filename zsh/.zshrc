@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block, everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 plugins=(
   autojump
   brew 
@@ -24,10 +31,10 @@ plugins=(
   osx
   taskwarrior
   tmux
-  zsh-apple-touchbar
+ # zsh-apple-touchbar
   zsh-autosuggestions
   zsh-syntax-highlighting
-  zsh-z	
+ # zsh-z	
 )
 
 # If you come from bash you might have to change your $PATH.
@@ -45,7 +52,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 source $ZSH/oh-my-zsh.sh
 
 # source functions
-source ~/.zsh/functions
+source ~/.zsh/functions/*
 
 # export customer path
 export PATH="/Users/andreas/bin:$PATH:/usr/local/Cellar/openvpn/2.4.7_1/sbin"
@@ -60,3 +67,11 @@ source ~/.zsh/aliases
 source ~/.zsh/kafka-zsh-completions/kafka.zsh
 
 eval $(thefuck --alias)
+
+# use for navigation with option key
+bindkey "[D" backward-word
+bindkey "[C" forward-word
+bindkey "^[a" beginning-of-line
+bindkey "^[e" end-of-line
+#bindkey '^[^?' backward-kill-word
+
