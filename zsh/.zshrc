@@ -52,7 +52,9 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 source $ZSH/oh-my-zsh.sh
 
 # source functions
-source ~/.zsh/functions/*
+for file in ~/.zsh/functions/*; do
+   source "$file"
+done
 
 # export customer path
 export PATH="/Users/andreas/bin:$PATH:/usr/local/Cellar/openvpn/2.4.7_1/sbin"
