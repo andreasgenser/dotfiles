@@ -86,3 +86,6 @@ fi
 if test -f "/Users/andreas/Development/projects/lkw-walter/repos/git-partner.infonova.com/support-scripts/healthcheck/env.sh"; then
   source /Users/andreas/Development/projects/lkw-walter/repos/git-partner.infonova.com/support-scripts/healthcheck/env.sh
 fi
+
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
