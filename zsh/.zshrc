@@ -77,3 +77,9 @@ bindkey "^[a" beginning-of-line
 bindkey "^[e" end-of-line
 #bindkey '^[^?' backward-kill-word
 
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

@@ -1,3 +1,4 @@
 # pcat 
 alias pcat='pygmentize -f terminal256 -O style=native -g'
 alias source-zsh='source ~/.zshrc'
+alias mpv='mpv-bundle'
