@@ -18,7 +18,6 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
-set backspace=indent,eol,start
 
 " sets auto indent
 set ai
@@ -33,6 +32,8 @@ if has("clipboard")
     set clipboard+=unnamedplus
   endif
 endif
+
+nnoremap <F3> :set hlsearch!<CR>
 
 " begin plugin section
 " -------------------------------------------------------------------------------
@@ -80,5 +81,8 @@ Plug 'christoomey/vim-system-copy'
 
 " A light and configurable statusline/tabline plugin for Vim
 Plug 'itchyny/lightline.vim'
+" Fzf plugin
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
