@@ -4,7 +4,8 @@ filetype off                  " required
 " show a menu when using tab completion
 set wildmenu
 " show line numbers
-set number relativenumber
+"set number relativenumber
+set number
 "set relativenumber
 set laststatus=2
 " show incomplete commands
