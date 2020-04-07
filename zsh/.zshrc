@@ -83,12 +83,12 @@ eval "$(jenv init -)"
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # LKW Walter Environment variables
-if test -f "/Users/andreas/Development/projects/lkw-walter/repos/git-partner.infonova.com/lkww-confidential/doc/misc/env.sh"; then
-  source /Users/andreas/Development/projects/lkw-walter/repos/git-partner.infonova.com/lkww-confidential/doc/misc/env.sh
+if test -f "~/Development/lkwww/git-partner/lkww-confidential/doc/misc/env.sh"; then
+  source ~/Development/lkwww/git-partner/lkww-confidential/doc/misc/env.sh
 fi
 
 # Kafka component env
-if test -f "/Users/andreas/Development/projects/lkw-walter/repos/git-partner.infonova.com/support-scripts/healthcheck/env.sh"; then
-  source /Users/andreas/Development/projects/lkw-walter/repos/git-partner.infonova.com/support-scripts/healthcheck/env.sh
+if test -f "~/Development/lkww/git-partner/support-scripts/healthcheck/env.sh"; then
+  source ~/Development/lkww/git-partner/support-scripts/healthcheck/env.sh
 fi
 
